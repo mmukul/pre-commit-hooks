@@ -174,7 +174,7 @@ In order to use husky, make sure you have already set TALISMAN_HOME to `$PATH`.
 
 ```bash
 # Download the talisman installer script
-curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh
+curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh
 chmod +x ~/install-talisman.sh
 ```
 
