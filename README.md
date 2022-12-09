@@ -180,9 +180,11 @@ chmod +x ~/install-talisman.sh
 
 ```bash
 # Install to a single project
-cd my-git-project
+cd talisman
+
 # as a pre-push hook
 ~/install-talisman.sh
+
 # or as a pre-commit hook
 ~/install-talisman.sh pre-commit
 ```
