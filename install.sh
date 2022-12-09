@@ -134,7 +134,7 @@ run() {
 
 		pushd ${TEMP_DIR} >/dev/null 2>&1
 		grep ${TALISMAN_BINARY_NAME} ${CHECKSUM_FILE_NAME} >${CHECKSUM_FILE_NAME}.single
-		shasum -a 256 -c ${CHECKSUM_FILE_NAME}.single
+		sha256sum -c ${CHECKSUM_FILE_NAME}.single
 		popd >/dev/null 2>&1
 		echo_debug "Checksum verification successful!"
 		echo
