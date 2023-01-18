@@ -174,19 +174,16 @@ In order to use husky, make sure you have already set TALISMAN_HOME to `$PATH`.
 
 ```bash
 # Download the talisman installer script
-curl https://github.com/mmukul/talisman/install.sh > ~/install-talisman.sh
-chmod +x ~/install-talisman.sh
+curl https://raw.githubusercontent.com/mmukul/pre-commit-hooks/main/install.sh > install-talisman.sh
+chmod +x install-talisman.sh
 ```
 
 ```bash
-# Install to a single project
-cd talisman
-
 # as a pre-push hook
-~/install-talisman.sh
+./install-talisman.sh
 
 # or as a pre-commit hook
-~/install-talisman.sh pre-commit
+./install-talisman.sh pre-commit
 ```
 
 ### Handling existing hooks
